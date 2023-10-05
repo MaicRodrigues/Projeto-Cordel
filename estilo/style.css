@@ -1,0 +1,91 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+:root{
+    --font1: verdana, Geneva , tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+header{
+    
+     background-color: black ;
+     color: white;
+     text-align: center;
+}
+header>h1{
+    font-size: 4em;
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 7vw;
+
+}    
+header>p {
+    
+     padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+   text-decoration: underline;
+}
+article{
+    font-family: var(--font3);
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 3vw;
+}
+article.normal{
+    background-color: white;
+
+}
+article.imagem{
+    color: aliceblue;
+    background-color: rgb(48, 48, 48);
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.438);
+    background-size: cover;
+    background-attachment: fixed;
+}
+article.imagem > p {
+    background-color: rgba(0, 0, 0, 0.247);
+    display:inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    
+
+}
+article#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+article#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
+}
+article>p{
+    padding-bottom: 2em;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
